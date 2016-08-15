@@ -32,7 +32,7 @@ layer, etc) and several test programs that use the kernel-like api to
 manipulate the file system.  The three programs included are: "makefs"
 which can create a file system, "tstfs" which is a simple stress test
 that creates, writes to, and deletes files, and "fsh", a file system
-shel that lets you interactively manipulate your file system.
+shell that lets you interactively manipulate your file system.
 
 
 BUILDING IT:
@@ -92,9 +92,9 @@ a summary of a a few of the more useful commands:
           is generated automatically.
   close - close the currently open file
    open - open the named file
- lat_fs - perform a test similar to the LmBench test "lat_fs" (ie.
+ lat_fs - perform a test similar to the lmbench test "lat_fs" (ie.
           create and delete files of various sizes).
- create - create the number of file specified (default 100)
+ create - create the number of files specified (default 100)
   rmall - remove all the files in a directory.  optionally you can
           name a directory and it will only remove the files in that
           directory.
