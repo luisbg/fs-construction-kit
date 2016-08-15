@@ -20,7 +20,7 @@
 #ifndef __BEOS__ 
 
 void
-unload_kernel_addon(aid)
+unload_kernel_addon(int aid)
 {
 }
 
