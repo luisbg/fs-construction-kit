@@ -68,10 +68,10 @@ typedef struct myfs_inode_etc {  /* these fields are needed when in memory */
 
 /* 
     The inode struct should also be a power of two in size.
-    Currently it is 128 bytes in size.  Keep that in mind if
+    Currently it is 256 bytes in size.  Keep that in mind if
     you decide to change it or the data_stream struct above.
 */
-typedef struct myfs_inode
+typedef struct __attribute__((__packed__)) myfs_inode
 {
     int32           magic1;
     int32           uid;
@@ -85,6 +85,7 @@ typedef struct myfs_inode
     myfs_inode_etc *etc;                    /* only used in memory */
 
     data_stream     data;
+    char           extra[20];
 } myfs_inode;
 
 
